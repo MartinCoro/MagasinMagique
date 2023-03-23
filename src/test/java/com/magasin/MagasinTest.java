@@ -14,4 +14,16 @@ class MagasinTest {
         assertEquals("fixme", app.items[0].name);
     }
 
+    @Test
+    void testGeneral(){
+        Item general1 = new Item("Whatever1", 20, 60);
+        Item general2 = new Item("Whatever2", 20, 20);
+        Item general3 = new Item("Whatever3", -20, 30);
+        Item[] items = new Item[] {new Item("Whatever1", 20, 60), new Item("Whatever2", 20, 20), new Item("Whatever3", -20, 30)};
+        Magasin magasin = new Magasin(items);
+        magasin.updateQuality();
+
+        assertEquals(19, magasin.items);
+    }
+
 }

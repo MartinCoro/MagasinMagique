@@ -49,6 +49,10 @@ class Magasin {
                     } else {
                         items[i].quality = 0;
                     }
+                }else {
+                    if (items[i].quality < 50) {
+                        items[i].quality = items[i].quality + 1;
+                    }
                 }
             }
         }
