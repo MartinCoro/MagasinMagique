@@ -24,7 +24,7 @@ class MagasinTest {
         assertEquals(59, magasin.items[0].quality);
 
         assertEquals(19, magasin.items[1].sellIn);
-        assertEquals(19, magasin.items[1].quality);
+        assertEquals(41, magasin.items[1].quality);
 
         assertEquals(-21, magasin.items[2].sellIn);
         assertEquals(28, magasin.items[2].quality);
